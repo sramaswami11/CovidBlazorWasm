@@ -8,7 +8,7 @@ on:
   push:
     branches: [ master ]
 jobs:
-  deploy-to-github-covid_blazor_wasm-pages:
+  deploy-to-github-covid-blazor-wasm-pages:
     # use ubuntu-latest image to run steps on
     runs-on: ubuntu-latest
     steps:
