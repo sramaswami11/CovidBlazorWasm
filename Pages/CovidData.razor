@@ -1,0 +1,21 @@
+﻿@page "/coviddata"
+
+
+@if (usCurrentCovidData != null)
+{
+    <h2>US Current Affected List</h2>
+
+    <div key="" class="card bg-light mb-3" style="width: 27rem;">
+        <div class="card-body">
+            <h5 class="card-text">Total Number of cases so far:  @usCurrentCovidData.actuals.cases</h5>
+            <h5 class="card-text">Total Deaths so far:  @usCurrentCovidData.actuals.deaths</h5>
+            <h5 class="card-text">New cases:  @usCurrentCovidData.actuals.newCases</h5>
+            <h5 class="card-text">New Deaths:  @usCurrentCovidData.actuals.newDeaths</h5>
+            <h5 class="card-text">Date updated:  @usCurrentCovidData.lastUpdatedDate</h5>
+        </div>
+    </div>
+}
+
+@code {
+
+}
